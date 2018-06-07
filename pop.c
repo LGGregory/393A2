@@ -1,3 +1,13 @@
+/*
+* pop.c
+* Liam Gregory  
+* Student ID: 500854978
+* Assignment #2 - Simulate Pop Machine
+* CPS 393 Section BA0
+* Instructor: L. Hiraki
+* purpose: To simulate operation of pop machine.
+*/
+
 #include <stdio.h>
 #include <stdbool.h>
 #define MINARG 2
@@ -52,7 +62,7 @@ int main(int argc, char *argv[]){
 
     printf("\nWelcome to my C Pop Machine!\n");
 
-    char input ='t';
+    char input;
     bool running = true;
     int change;
     int total;
@@ -106,7 +116,7 @@ int main(int argc, char *argv[]){
                 }
             } else {
                 change = total;
-           }
+            }
         }
         giveChange(change);
     }
