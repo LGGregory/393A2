@@ -60,7 +60,9 @@ int main(int argc, char *argv[]){
     while(running){
         total = 0;
         restarting = false;
-        printf("\nPop is %d centimes. Please insert any combinartion of nickels [N or n], dimes [D or d] or pentes [P or p]. You can also press R or r for coin return.\n\n", price);
+        printf("\nPop is %d centimes. Please insert any combinartion of nickels", price);
+        printlf("[%c or %c], dimes [%c or %c] or pentes [%c or %c].", NICKUPPER, NICKLOWER, DIMEUPPER, DIMELOWER, PENTUPPER, PENTLOWER);
+        printf("You can also press %c or %c for coin return.\n\n", RTRNUPPER, RTRNLOWER);
         while(total < price && running && !restarting){
             printf("Enter coin (NDPR) : ");
             scanf(" %c", &input);
