@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#define MINARG 2
 #define MINVALUE 30
 #define MAXVALUE 105
 #define NVALUE 5
@@ -33,7 +34,7 @@ void giveChange(int change){
 }
 
 int main(int argc, char *argv[]){
-    if(argc != 2){
+    if(argc != MINARG){
         printf("Please specify selling price as command line argument.\n");
         printf("Usage: pop [price]\n");
         return (1);
